@@ -1,0 +1,258 @@
+:root {
+    /* height: 100%; */
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* main {
+    justify-content: space-around;
+} */
+
+h1 {
+    font-family: serif;
+    margin: 24px 0 5vh 0 ;
+}
+
+div.card.product_preview_container {
+    /* height: 420px; */
+    width: 400px;
+    border: none;
+    /* margin: 0 0 50px 0; */
+    justify-content: center;
+}
+
+h2.card-title {
+    margin: 0;
+}
+
+div.card-body {
+    height: 100%;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    margin: 0 0 1px 0;
+}
+
+h2.card-title, p.card-text {
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+p.card-text.quantity {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 0;
+    margin: 0 0 10px 0;
+}
+
+button.card-text-button {
+    display: inline-block;
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 5px;
+}
+
+div.items.card-text {
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 0 50px 0;
+    width: 430.312px;
+}
+
+/* div.phone_number_prompt_wrapper {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+} */
+
+#phone_number_label {
+    font-size: 18px;
+}
+
+a.card-text.order-link {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}   
+
+hr.section-divider {
+    margin: 8vh 0 5vh 0;
+}
+
+div.card.custom {
+    padding: 20px 0 20px 0;
+}
+
+div.card.contact-details {
+    height: 200px;
+    width: 400px;
+    border: none;
+}
+
+div.contact-details.card-body {
+    padding: 0;
+}
+
+form.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    padding: 0;
+    margin: 0 0 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.submit-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+#submit-btn {
+    width: fit-content;
+    margin: 0 5% 0 0;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+}
+
+@media (min-height: 1200px) {
+    h1 {
+        margin: 0 0 5vh 0;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        height: fit-content;
+    }
+    div.card-body {
+        padding: 20px;
+    }
+
+    h2.card-title, p.card-text, p.card-text.quantity {
+        font-size: 20px;
+    }
+
+    p.card-text.quantity {
+        justify-content: left;
+    }
+
+    p.card-text.quantity * {
+        margin: 0 0 0 10px;
+    }
+
+    a.card-text.card-link {
+        font-size: 20px;
+    }
+
+    div.card.contact-details {
+        width: 350px;
+    }
+
+    hr.section-divider {
+        margin: 2vh 0 2vh 0;
+    }
+
+    div.card.custom {
+        padding: 0 0 20px 0;
+    }
+
+    h5.card-title.custom, a.card-text.custom {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        height: fit-content;
+        width: 100svw;
+    }
+
+    div.card.product_preview_container {
+        width: 100%;
+    }
+
+    div.card-body {
+        /* padding: 20px 2vw 20px 2vw; */
+    }
+
+    h2.card-title, p.card-text, a.card-text {
+        font-size: 18px !important;
+        width: 100%;
+    }
+
+    p.card-text.quantity {
+        font-size: 18px;
+        width: 100%;
+        padding: 0;
+        /* word-break: break-all; */
+        
+    }
+
+    p.card-text.quantity * {
+        width: min-content;
+        margin: 0 0 0 5vw;
+        font-size: 18px;
+    }
+
+    button.card-text-button {
+        height: inherit;
+        width: 10% !important;
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 0px;
+        font-size: 21px !important;
+    }
+
+    div.card.contact-details {
+        width: 90%;
+    }
+
+    div.card-body.custom {
+        padding: 15px;
+    }
+
+    h5.card-title.custom, a.card-text.custom {
+        font-size: 20px;
+    }
+
+    a.card-text.custom {
+        width: fit-content;
+    }
+}
